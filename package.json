@@ -1,9 +1,12 @@
 {
+  "homepage":"https://EdwinOrtizCantillo.github.io/proyecto_back",
   "name": "proyecto-back",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon ./bin/www",
+    "predeploy": "npm run build", 
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
